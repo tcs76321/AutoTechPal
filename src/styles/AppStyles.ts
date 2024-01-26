@@ -1,13 +1,13 @@
 import { StyleSheet } from 'react-native';
 
-export const styles = StyleSheet.create({
+export const appStyles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: 'black',
         alignItems: 'center',
         justifyContent: 'center',
     },
-    text: {
+    mainText: {
         color: 'white',
     }
 });
