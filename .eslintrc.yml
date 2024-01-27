@@ -1,0 +1,46 @@
+env:
+  es2021: true
+  node: true
+  'react-native/react-native': true
+extends:
+  - 'eslint:recommended'
+  - 'plugin:@typescript-eslint/recommended'
+  - 'plugin:react/recommended'
+  - 'plugin:react-native/all'
+  - 'plugin:prettier/recommended'  # Keep Prettier last for correct overrides
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: latest
+  sourceType: module
+  project: './tsconfig.json'
+plugins:
+  - 'react'
+  - 'react-native'
+  - '@typescript-eslint'
+rules:
+  # Strict rules
+  eqeqeq: ['error', 'always']  # Enforce strict equality
+  no-var: 'error'  # Disallow var declarations
+  prefer-const: 'error'  # Require const declarations for variables that are never reassigned
+  no-unused-vars: 'warn'  # Unused variables
+  no-console: 'warn'  # Warning for console statements
+  complexity: ['warn', { 'max': 10 }]  # Limit cyclomatic complexity
+  max-depth: ['warn', 4]  # Max depth of blocks
+  max-lines: ['warn', 300]  # Max number of lines per file
+  max-params: ['warn', 3]  # Limit the number of parameters in functions
+
+  # React and React Native specific rules
+  react/jsx-filename-extension: ['warn', { 'extensions': ['.tsx'] }]
+  react/jsx-props-no-spreading: 'warn'  # Warn against prop spreading
+  react/prop-types: 'off'  # Turn off prop-types if using TypeScript
+
+  # TypeScript specific rules
+  '@typescript-eslint/explicit-module-boundary-types': 'warn'  # Require explicit return types
+  '@typescript-eslint/no-explicit-any': 'warn'  # Warn against any types
+
+  # Prettier integration
+  'prettier/prettier': ['error', {}, {
+    'usePrettierrc': false
+  }]
