@@ -32,6 +32,15 @@ A step-by-step series of examples that tell you how to get a development environ
 5. Start developing!
 
 
+## Other Important Scripts
+   ```sh
+    npm run expo lint:fix
+   ```
+
+   ```sh
+    npm run expo format
+   ```
+
 ## Running the Tests
 
 TODO:
