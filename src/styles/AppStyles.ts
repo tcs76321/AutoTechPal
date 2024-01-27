@@ -3,11 +3,11 @@ import { StyleSheet } from "react-native";
 export const appStyles = StyleSheet.create({
   container: {
     alignItems: "center",
-    backgroundColor: "black",
+    backgroundColor: "#26262a",
     flex: 1,
     justifyContent: "center",
   },
   mainText: {
-    color: "white",
+    color: "#ffeaa7",
   },
 });
