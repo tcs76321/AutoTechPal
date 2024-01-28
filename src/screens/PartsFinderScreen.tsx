@@ -15,7 +15,11 @@ function PartsFinderScreen({ navigation }: PartsFinderProps) {
                 <Text style={appStyles.titleText}>Parts Finder</Text>
             </View>
             <View style={appStyles.backButtonBottom}>
-                <Button title={"Back"} onPress={() => navigation.goBack()} />
+                <Button
+                    title="Back"
+                    onPress={() => navigation.goBack()}
+                    testID='PartsFinderBackButton'
+                />
             </View>
         </View>
     );

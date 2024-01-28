@@ -15,7 +15,11 @@ function DTCSearchScreen({ navigation }: DTCSearchProps) {
                 <Text style={appStyles.titleText}>DTC Search</Text>
             </View>
             <View style={appStyles.backButtonBottom}>
-                <Button title={"Back"} onPress={() => navigation.goBack()} />
+                <Button
+                    title="Back"
+                    onPress={() => navigation.goBack()}
+                    testID='DTCSearchBackButton'
+                />
             </View>
         </View>
     );

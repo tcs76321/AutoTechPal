@@ -15,7 +15,11 @@ function DocumentRepairScreen({ navigation }: DocumentRepairScreenProps) {
                 <Text style={appStyles.titleText}>Document Repair</Text>
             </View>
             <View style={appStyles.backButtonBottom}>
-                <Button title={"Back"} onPress={() => navigation.goBack()} />
+                <Button
+                    title="Back"
+                    onPress={() => navigation.goBack()}
+                    testID='DocumentRepairBackButton'
+                />
             </View>
         </View>
     );

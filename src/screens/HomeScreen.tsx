@@ -19,24 +19,28 @@ function HomeScreen({ navigation }: HomeScreenProps) {
                     <Button
                         title="VIN Lookup"
                         onPress={() => navigation.navigate("VIN Lookup")}
+                        testID="VINLookupButton"
                     />
                 </View>
                 <View style={appStyles.row}>
                     <Button
                         title="Document Repair"
                         onPress={() => navigation.navigate("Document Repair")}
+                        testID="DocumentRepairButton"
                     />
                 </View>
                 <View style={appStyles.row}>
                     <Button
                         title="DTC Search"
                         onPress={() => navigation.navigate("DTC Search")}
+                        testID="DTCSearchButton"
                     />
                 </View>
                 <View style={appStyles.row}>
                     <Button
                         title="Parts Finder"
                         onPress={() => navigation.navigate("Parts Finder")}
+                        testID="PartsFinderButton"
                     />
                 </View>
             </View>

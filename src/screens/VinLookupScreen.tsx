@@ -15,7 +15,11 @@ function VINLookupScreen({ navigation }: VINLookupProps) {
                 <Text style={appStyles.titleText}>VIN Lookup</Text>
             </View>
             <View style={appStyles.backButtonBottom}>
-                <Button title={"Back"} onPress={() => navigation.goBack()} />
+                <Button
+                    title="Back"
+                    onPress={() => navigation.goBack()}
+                    testID='VINLookupBackButton'
+                />
             </View>
         </View>
     );
