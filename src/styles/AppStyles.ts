@@ -49,4 +49,9 @@ export const appStyles = StyleSheet.create({
     fontSize: 12,
     textAlign: "center",
   },
+  backButtonBottom: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    paddingBottom: 20,
+  },
 });
