@@ -1,5 +1,5 @@
 // src/constants/colors.ts
 export default {
   darkBackground: "#26262a",
-  mainText: "#ffeaa7",
+  text_color: "#ffeaa7",
 };
