@@ -54,4 +54,27 @@ export const appStyles = StyleSheet.create({
     justifyContent: 'flex-end',
     paddingBottom: 20,
   },
+  input: {
+    borderWidth: 1,
+    borderColor: 'gray',
+    padding: 10,
+    margin: 10,
+    borderRadius: 5,
+    backgroundColor: colors.white_color,
+  },
+  infoContainer: {
+    margin: 10,
+    padding: 10,
+    backgroundColor: colors.white_color,
+    borderRadius: 5,
+  },
+  infoText: {
+    fontSize: 16,
+    marginBottom: 5,
+  },
+  errorText: {
+    color: 'red',
+    fontSize: 16,
+    margin: 10,
+  },
 });
