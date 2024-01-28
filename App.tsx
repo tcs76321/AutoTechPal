@@ -29,7 +29,6 @@ export default function App() {
                 </View>
                 <View style={appStyles.row}>
                     <Button title="Parts Finder" onPress={() => {}} />
-                    {/*<Button title="Button 8" onPress={() => {}} />*/}
                 </View>
             </View>
             <View style={appStyles.footerContainer}>
