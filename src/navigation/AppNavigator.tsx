@@ -1,7 +1,7 @@
 import React from "react";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from '../screens/HomeScreen';
-import VinLookupScreen from '../screens/VinLookupScreen';
+import VinLookupScreen from '../screens/VINLookupScreen';
 import DocumentRepairScreen from '../screens/DocumentRepairScreen';
 import DTCSearchScreen from '../screens/DTCSearchScreen';
 import PartsFinderScreen from '../screens/PartsFinderScreen';
