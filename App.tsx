@@ -14,18 +14,17 @@ export default function App() {
                         title="VIN Lookup"
                         onPress={() => {}}
                     />
+                </View>
+                <View style={appStyles.row}>
                     <Button
                         title="Document Repair"
                         onPress={() => {}}
                     />
+                    {/*<Button title="Maint Schedule" onPress={() => {}} />*/}
                 </View>
                 <View style={appStyles.row}>
                     <Button title="DTC Lookup" onPress={() => {}} />
-                    <Button title="Maint Schedule" onPress={() => {}} />
-                </View>
-                <View style={appStyles.row}>
-                    <Button title="BG Products" onPress={() => {}} />
-                    <Button title="Cost Estimator" onPress={() => {}} />
+                    {/*<Button title="Cost Estimator" onPress={() => {}} />*/}
                 </View>
                 <View style={appStyles.row}>
                     <Button title="Parts Finder" onPress={() => {}} />
