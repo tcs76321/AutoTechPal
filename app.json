@@ -15,7 +15,13 @@
       "src/assets/**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tcs123.AutoTechPal"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "59aac792-d217-4816-8567-7c1c8cf0c2f4"
+      }
     }
   }
 }
