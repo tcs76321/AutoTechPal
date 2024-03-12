@@ -4,6 +4,7 @@ import { appStyles } from "../styles/AppStyles";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../navigation/NavigationTypes";
 import useDecodeVinAPI from "../hooks/useDecodeVinAPI";
+import {SafeAreaView} from "react-native-safe-area-context";
 
 type VINLookupProps = {
     navigation: NativeStackNavigationProp<RootStackParamList, 'VIN Lookup'>;
@@ -14,7 +15,7 @@ function VINLookupScreen({ navigation }: VINLookupProps) {
     const { vehicleInfo, isLoading, error, fetchVehicleInfo } = useDecodeVinAPI();
 
     return (
-        <View style={appStyles.container}>
+        <SafeAreaView style={appStyles.container}>
             <View style={appStyles.titleContainer}>
                 <Text style={appStyles.titleText}>VIN Lookup</Text>
             </View>
@@ -46,7 +47,7 @@ function VINLookupScreen({ navigation }: VINLookupProps) {
                     testID='VINLookupBackButton'
                 />
             </View>
-        </View>
+        </SafeAreaView>
     );
 }
 

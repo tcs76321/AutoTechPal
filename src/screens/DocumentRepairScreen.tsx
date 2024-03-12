@@ -3,6 +3,7 @@ import {View, Text, Button} from "react-native";
 import { appStyles } from "../styles/AppStyles";
 import { NativeStackNavigationProp} from "@react-navigation/native-stack";
 import { RootStackParamList } from "../navigation/NavigationTypes";
+import {SafeAreaView} from "react-native-safe-area-context";
 
 type DocumentRepairScreenProps = {
     navigation: NativeStackNavigationProp<RootStackParamList, 'Document Repair'>;
@@ -10,7 +11,7 @@ type DocumentRepairScreenProps = {
 
 function DocumentRepairScreen({ navigation }: DocumentRepairScreenProps) {
     return (
-        <View style={appStyles.container}>
+        <SafeAreaView style={appStyles.container}>
             <View style={appStyles.titleContainer}>
                 <Text style={appStyles.titleText}>Document Repair</Text>
             </View>
@@ -21,7 +22,7 @@ function DocumentRepairScreen({ navigation }: DocumentRepairScreenProps) {
                     testID='DocumentRepairBackButton'
                 />
             </View>
-        </View>
+        </SafeAreaView>
     );
 }
 

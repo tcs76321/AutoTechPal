@@ -3,6 +3,7 @@ import { View, Button, Text } from "react-native";
 import { appStyles } from "../styles/AppStyles";
 import { NativeStackNavigationProp} from "@react-navigation/native-stack";
 import { RootStackParamList } from "../navigation/NavigationTypes";
+import {SafeAreaView} from "react-native-safe-area-context";
 
 type HomeScreenProps = {
     navigation: NativeStackNavigationProp<RootStackParamList, 'Home'>;
@@ -10,7 +11,7 @@ type HomeScreenProps = {
 
 function HomeScreen({ navigation }: HomeScreenProps) {
     return (
-        <View style={appStyles.container}>
+        <SafeAreaView style={appStyles.container}>
             <View style={appStyles.titleContainer}>
                 <Text style={appStyles.titleText}>AutoTechPal</Text>
             </View>
@@ -47,7 +48,7 @@ function HomeScreen({ navigation }: HomeScreenProps) {
             <View style={appStyles.footerContainer}>
                 <Text style={appStyles.footerText}>Made by Trevor C. Stahl</Text>
             </View>
-        </View>
+        </SafeAreaView>
     );
 }
 
